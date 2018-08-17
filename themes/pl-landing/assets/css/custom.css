@@ -404,11 +404,11 @@ img {
 	background: #284a99;
 }
 .cards .card .circle img{
-	margin: -3px 0 0 6px;
+	margin: 10px 0 0 6px;
 }
 .cards .card h3{
 	position: relative;
-	font-size: 18px;
+	font-size: 16px;
 	color: #777777;
 	font-weight: 800;
 	display: inline-block;
@@ -614,6 +614,7 @@ img {
 
 .one_shop .descp .graphic img{
 	width: 100%;
+	height: 100%;
 }
 
 /*.one_shop .descp .items{
@@ -632,7 +633,8 @@ img {
 	position: relative;
 	display: inline-block;
 }
-.one_shop .descp .items h3:after{
+
+/*.one_shop .descp .items h3:after{
 	position: absolute;
 	content: "";
 	background: #1d548f;
@@ -644,7 +646,7 @@ img {
 	-webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.15);
-}
+}*/
 
 .one_shop .descp .items ul{
 	margin-top: 35px;
@@ -986,7 +988,7 @@ img {
 	-webkit-clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
 	clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
 	height: auto;
-	padding: 80px 125px 31px 200px;
+	padding: 80px 0px 31px 200px;
 	margin-left: -160px;
 }
 /* Extra large devices (large desktops, 1200px and up) */
@@ -995,9 +997,44 @@ img {
 		width: 1210px;
 	}
 }
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
 
+@media (max-width: 1200px) {
+	.hero .call_to_action .form-group{
+		width:200px;
+	}
+	.container {
+		width: 100%;
+	}
+}
+@media (max-width: 1120px) {
+	.cards .card h3:after{
+		content: none;
+	}
+
+	.bg_grey{
+		padding: 80px 0px 31px 150px;
+	}
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991px) {
+	.hero .call_to_action .form-group{
+		width: 190px;
+		margin-right: 15px;
+	}
+	.hero .call_to_action .btn-default{
+		font-size: 16px;
+		margin: 0px 15px 0px 0px;
+	}
+	.hero .call_to_action header h2{
+		font-size: 14px;
+	}
+	.hero .call_to_action .btn.btn_submit{
+		width: 95px;
+		font-size: 14px;
+	}
+	.hero .call_to_action .middle_block{
+		padding: 20px;
+	}
 }
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (max-width: 768px) {
@@ -1005,9 +1042,106 @@ img {
 }
 
 @media (max-width: 767px) {
+	.navbar-nav{
+		margin: 20px 0px 0px;
+	}
+	.navbar-default .navbar-toggle{
+		border-color: rgba(20,61,160,0.9);
+		background: rgba(20,61,160,0.9);
+		margin: -60px 0px 0px;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+		border-color: rgba(20,61,160,0.9);
+		background: rgba(20,61,160,0.9);
+	}
+	.navbar-nav>li{
+		margin-bottom: 25px;
+	}
+	.navbar-default{
+		float: none;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background: #fffb86;
+	}
 	.sidebar{
 		padding: 0px;
 	}
+
+	.youtube_block{
+		text-align: center;
+	}
+	.hero .call_to_action{
+		margin: 20px auto;
+		float: none;
+	}
+
+	.cards .card{
+		margin-bottom: 55px;
+	}
+
+	.article .flex .w25, .article .flex .w50{
+		width: 100%;
+		float: none;
+		height: -webkit-fill-available;
+	}
+
+	.flex{
+		display: block;
+	}
+	.w50{
+		float: none;
+		width:100%;
+	}
+
+	.bg_grey{
+		padding: 60px 15px;
+		margin-left: 0px;
+		clip-path: none;
+	}
+	.hero .call_to_action .btn.btn_submit{
+		width: 100%;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+	.hero .call_to_action .form-group{
+		width: 100%;
+	}
+
+	.hero .main_title_block h1 span{
+		font-size: 30px;
+	}
+	.hero .main_title_block h1{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.footer_top h4{
+		font-size: 30px;
+		line-height: 40px;
+		padding-bottom: 20px;
+	}
+	.footer_top{
+		padding: 50px 15px;
+	}
+	.footer_top p{
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.we_are_here h3{
+		font-size: 28px;
+	}
+
+	.hero.inner_page .main_title_block h1{
+		font-size: 30px;
+	}
+	.hero.inner_page .main_title_block h3{
+		font-size: 24px;
+	}
+	.top_heading p{
+		font-size: 16px;
+		line-height: 30px;
+	}
+
 }
 /* Small devices (landscape phones, 544px and up) */
 @media (max-width: 544px) {
