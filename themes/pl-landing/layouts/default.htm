@@ -1,0 +1,33 @@
+description = "Default"
+==
+<?php
+function onStart()
+{
+$this->addCss('/themes/pl-landing/assets/css/bootstrap.min.css');
+$this->addCss('/themes/pl-landing/assets/css/custom.css');
+$this->addCss('/themes/pl-landing/assets/css/bootstrap-select.min.css');
+}
+?>
+==
+<html>
+<head>
+    <title>PL::Precription Life Line</title>
+    {% styles %}
+</head>
+<body>
+{% partial "header" %}
+{% page %}
+{% partial "footer" %}
+<button class="btn scrollTop"></button>
+<!-- Scripts -->
+<script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+<script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="{{ 'assets/js/bootstrap-select.min.js'|theme }}"></script>
+<!-- TrustBox script -->
+<script src="{{ 'assets/js/tp.widget.bootstrap.min.js'|theme }}" async></script>
+<script src="{{ 'assets/js/custom.js'|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+</body>
+</html>

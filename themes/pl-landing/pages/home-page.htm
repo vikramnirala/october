@@ -1,0 +1,45 @@
+title = "pl_home"
+url = "/home"
+layout = "default"
+is_hidden = 0
+==
+<!-- Hero starts here -->
+<section id="home" class="hero">
+    <div class="container">
+        {% content "hero_title.htm" %}
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                {% content "video_block.htm" %}
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                {% content "form.htm" %}
+            </div>
+        </div>
+    </div>
+</section><!-- Hero ends here -->
+
+<!-- Our Programs starts here -->
+{% content "our_programs.htm" %}
+<!-- Our Programs ends here -->
+
+<!-- Reviews starts here -->
+<section id="pl_help" class="reviews">
+    {% content "home_reviews.htm" %}
+    {% content "about_us.htm" %}
+</section><!-- Reviews ends here -->
+
+<!-- Article starts here -->
+{% content "article_home.htm" %}
+<!-- Article ends here -->
+
+<!-- Our Members starts here -->
+{% content "member_section.htm" %}
+<!-- Our Members ends here -->
+
+<!-- How Its works starts here -->
+{% content "how_it_work.htm" %}
+<!-- How Its works ends here -->
+
+<!-- One Shop starts here -->
+{% content "oneshop_article.htm" %}
+<!-- One Shop ends here -->

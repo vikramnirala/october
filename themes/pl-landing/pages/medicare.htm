@@ -1,0 +1,43 @@
+title = "medicare"
+url = "/medicare"
+layout = "default"
+is_hidden = 0
+==
+<section id="home" class="hero inner_page">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				{% content "medicare_hero_title.htm" %}
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				{% content "form.htm" %}
+			</div>
+		</div>
+	</div>
+</section>
+<div class="medicare_page">
+    <div class="container">
+       {% content "medicare_top_heading.htm" %}
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <aside class="article">
+                    <div class="non_medicare">
+                        {% content "medicare_part_d.htm" %}
+                        {% content "did_you_know.htm" %}
+                        {% content "finding_plan.htm" %}
+                    </div>
+                </aside>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <aside class="sidebar">
+                    <div class="sidebar_review section_reviews no_padding">
+                        {% content "trustpilot_review.htm" %}
+                    </div>
+                   
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main content ends here -->
+{% content "we_are_here.htm" %}
